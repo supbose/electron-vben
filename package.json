@@ -1,6 +1,6 @@
 {
   "name": "vben-admin",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "author": {
     "name": "vben",
     "email": "anncwb@126.com",
@@ -8,10 +8,7 @@
   },
   "main": "dist/main/build.js",
   "build": {
-    "appId": "xxx@gmail.com",
-    "electronDownload": {
-      "mirror": "https://npm.taobao.org/mirrors/electron/"
-    },
+    "appId": "xxx@gmail.com",    
     "files": [
       "!node_modules",
       "dist/**"
