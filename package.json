@@ -24,8 +24,7 @@
       ]
     },
     "linux": {
-      "icon": "build/icons/512x512.png",
-      "target": [
+        "target": [
         "deb"
       ]
     },
