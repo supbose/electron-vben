@@ -23,7 +23,7 @@ jobs:
       - name: build windows app
         run: |
           yarn
-          yarn release
+          yarn build:app
         shell: pwsh
         env:
           GITHUB_TOKEN: ${{ secrets.VBEN_TOKEN }}
