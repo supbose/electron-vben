@@ -24,29 +24,22 @@
     ],
     "asar": false,
     "mac": {
-      "icon": "build/icons/icon.icns",
-      "artifactName": "${productName}_setup_${version}.${ext}",
+      "icon": "build/icons/icon.icns",      
       "target": [
-        "dmg"
-      ]
+        "default"
+      ],"extendInfo":{"LSUIElement":1}
     },
     "linux": {
-      "icon": "build/icons/",
-      "target": [
-        "deb"
-      ]
+      "icon": "build/icons/"     
     },
     "win": {
       "icon": "build/icons/icon.ico",
       "target": [
         {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
+          "target": "nsis"        
         }
-      ],
-      "artifactName": "${productName}_setup_${version}.${ext}"
+      ]
+      
     },
     "nsis": {
       "oneClick": false,
