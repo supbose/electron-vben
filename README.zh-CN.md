@@ -40,7 +40,7 @@ Vue Vben Admin 是一个免费开源的中后台模版。使用了最新的`vue3
 
 在 Gitpod（适用于 GitHub 的免费在线开发环境）中打开项目，并立即开始编码.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/anncwb/vue-vben-admin)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/supbose/electron-vben)
 
 ## 文档
 
