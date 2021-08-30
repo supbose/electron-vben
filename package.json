@@ -1,6 +1,6 @@
 {
-  "name": "vben-admin",
-  "version": "2.5.1",
+  "name": "electron-vben",
+  "version": "2.5.3",
   "author": {
     "name": "vben",
     "email": "anncwb@126.com",
@@ -8,24 +8,36 @@
   },
   "main": "dist/main/build.js",
   "build": {
-    "appId": "xxx@gmail.com",    
+    "appId": "com.zhizhuvideo.vben",
+    "copyright": "Copyright @ 2020 supbose@pm.me",
+    "productName": "项目vben测试",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "supbose",
+        "repo": "electron-vben"
+      }
+    ],
     "files": [
       "!node_modules",
       "dist/**"
     ],
     "asar": false,
     "mac": {
+      "icon": "build/icons/icon.icns",
       "artifactName": "${productName}_setup_${version}.${ext}",
       "target": [
         "dmg"
       ]
     },
     "linux": {
-        "target": [
+      "icon": "build/icons/",
+      "target": [
         "deb"
       ]
     },
     "win": {
+      "icon": "build/icons/icon.ico",
       "target": [
         {
           "target": "nsis",
