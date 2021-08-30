@@ -1,6 +1,6 @@
 {
   "name": "electron-vben",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "author": {
     "name": "vben",
     "email": "anncwb@126.com",
@@ -11,6 +11,9 @@
     "appId": "com.zhizhuvideo.vben",
     "copyright": "Copyright @ 2020 supbose@pm.me",
     "productName": "项目vben测试",
+    "directories": { 
+      "output": "dist_electron"
+    }, 
     "publish": [
       {
         "provider": "github",
@@ -55,7 +58,7 @@
     "build": "vite build && esno ./build/script/postBuild.ts",
     "build:no-cache": "yarn clean:cache && npm run build",
     "dev:app": "esno ./build/script/startElectron.ts --env=development --watch",
-    "build:app": "npm run build && esno ./build/script/startElectron.ts --env=production && electron-builder ",
+    "build:app": "npm run build && esno ./build/script/startElectron.ts --env=production && electron-builder -p always ",
     "report": "cross-env REPORT=true npm run build",
     "type:check": "vue-tsc --noEmit --skipLibCheck",
     "preview": "npm run build && vite preview",
